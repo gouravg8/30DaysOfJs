@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries data visual</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input{
+            border: 2px solid orange;
+        }
+    </style>
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch -->
+</head>
+
+<body>
+    <div class="container w-3/4 flex justify-center align-middle flex-col mx-auto mt-4">
+        <div class="heading text-center mb-4">
+            <h1 class="text-2xl md:text-4xl font-semibold text-orange-500">World Countries Data</h1>
+            <p class="text-base md:text-2xl text-center">Currently, we have 250 countries</p>
+        </div>
+        <hr>
+        <div class="btn-section my-6 text-center">
+            <input class="border-dashed px-3 py-1 focus:outline-none" type="number" name="" id="inputNumber" placeholder="Enter range" min="0">
+            <div class="btns">
+                <button id="population"
+                    class="text-white bg-orange-400 px-4 py-1 text-lg rounded font-semibold">POPULATION</button>
+                <button id="languages"
+                    class="text-white bg-orange-400 px-4 py-1 text-lg rounded font-semibold mt-2">LANGUAGES</button>
+            </div>
+            <p class="tenMost"></p>
+        </div>
+        <div class="totalOutput w-full mx-auto flex flex-col justify-center align-middle">
+            <!-- <div class="grid grid-cols-12 my-2">
+                <p class="text-center col-span-2">English</p>
+                <p class="bar w-full col-span-8 bg-orange-400"></p>
+                <p class="text-center nums col-span-2">998</p>
+            </div> -->
+            <!-- <div class="grid grid-cols-12 my-2">
+                <p class="text-center col-span-2">English</p>
+                <p class="bar w-full col-span-8 bg-orange-400"></p>
+                <p class="text-center nums col-span-2">998</p>
+            </div>
+            <div class="grid grid-cols-12 my-2">
+                <p class="text-center col-span-2">English</p>
+                <p class="bar w-full col-span-8 bg-orange-400"></p>
+                <p class="text-center nums col-span-2">998</p>
+            </div> -->
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+<style>
+    /* p{
+        width: fit-content;
+    } */
+</style>
+
+</html>
